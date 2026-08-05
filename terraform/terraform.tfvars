@@ -40,7 +40,7 @@ workspaces = {
       }
     }
 
-    load_balancer_internal = false
+    load_balancer_internal = true
     load_balancer_type     = "application"
   }
 }

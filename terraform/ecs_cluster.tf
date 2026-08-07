@@ -1,6 +1,5 @@
 module "ecs_cluster" {
-  # source = "git::https://github.com/therenanlira/container-arch--aws-modules.git//ecs_cluster?ref=v1"
-  source = "../../container-arch--aws-modules/ecs_cluster"
+  source = "git::https://github.com/therenanlira/container-arch--aws-modules.git//ecs_cluster?ref=v1"
 
   project_name   = local.workspace.project_name
   environment    = local.workspace.environment

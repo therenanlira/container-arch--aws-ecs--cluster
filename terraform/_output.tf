@@ -18,6 +18,10 @@ output "lb_listener_arn" {
   value = module.ecs_cluster.lb_listener_arn
 }
 
+output "api_gateway_id" {
+  value = module.ecs_cluster.api_gateway_id
+}
+
 output "cloudmap_id" {
   value = module.ecs_cluster.cloudmap_id
 }

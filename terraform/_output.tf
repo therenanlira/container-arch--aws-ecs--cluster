@@ -6,6 +6,10 @@ output "lb_arn" {
   value = module.ecs_cluster.lb_arn
 }
 
+output "lb_arn_suffix" {
+  value = module.ecs_cluster.lb_arn_suffix
+}
+
 output "lb_dns_name" {
   value = module.ecs_cluster.lb_dns_name
 }

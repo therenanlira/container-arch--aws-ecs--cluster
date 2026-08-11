@@ -3,6 +3,6 @@ data "terraform_remote_state" "aws_vpc" {
   config = {
     bucket = "150100906110--terraform-backend"
     key    = "env:/${terraform.workspace}/container-arch/aws-vpc/terraform.tfstate"
-    region = local.workspace.aws_region
+    region = "us-east-2"
   }
 }

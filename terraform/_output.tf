@@ -49,3 +49,15 @@ output "service_connect_name" {
 output "service_connect_arn" {
   value = module.ecs_cluster.service_connect_arn
 }
+
+output "gax_listener_arn" {
+  value = one(module.global_accelerator[*].listener_arn)
+}
+
+output "gax_dns_name" {
+  value = one(module.global_accelerator[*].global_accelerator_dns)
+}
+
+output "gax_ip_sets" {
+  value = one(module.global_accelerator[*].global_accelerator_ip_sets)
+}

@@ -15,3 +15,12 @@ provider "aws" {
     tags = local.tags
   }
 }
+
+provider "aws" {
+  alias               = "gax"
+  allowed_account_ids = local.workspace.allowed_accounts
+  region              = "us-west-2"
+  default_tags {
+    tags = local.tags
+  }
+}

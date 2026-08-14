@@ -6,6 +6,7 @@ workspaces = {
     central_region   = "us-east-2"
     is_central       = true
     enable_gax       = false
+    gax_traffic_dial = 100
 
     project_name = "container-arch"
 
@@ -54,6 +55,7 @@ workspaces = {
     central_region   = "us-east-2"
     is_central       = false
     enable_gax       = false
+    gax_traffic_dial = 0
 
     project_name = "container-arch"
 

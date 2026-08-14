@@ -31,5 +31,7 @@ module "global_accelerator_endpoint" {
     }
   ]
 
+  traffic_dial_percentage = local.workspace.gax_traffic_dial
+
   health_check_path = "/"
 }

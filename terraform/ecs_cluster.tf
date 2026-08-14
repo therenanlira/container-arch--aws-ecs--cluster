@@ -15,7 +15,7 @@ module "ecs_cluster" {
 
   load_balancer_internal = local.workspace.load_balancer_internal
   load_balancer_type     = local.workspace.load_balancer_type
-  enable_vpclink         = true
+  enable_vpclink         = false
 
   user_data_template = "${path.module}/templates/user-data.tpl"
 }

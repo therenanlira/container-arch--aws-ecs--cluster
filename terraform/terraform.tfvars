@@ -1,9 +1,9 @@
 workspaces = {
-  dev-us-east-1 = {
+  dev-us-east-2 = {
     allowed_accounts = ["150100906110"]
     environment      = "dev"
-    aws_region       = "us-east-1"
-    central_region   = "us-east-1"
+    aws_region       = "us-east-2"
+    central_region   = "us-east-2"
     is_central       = true
     enable_gax       = false
 
@@ -16,7 +16,7 @@ workspaces = {
     ecs_volume_type   = "gp3"
 
     ecs_ami = {
-      us-east-1 = "ami-01edba92f9036f76e"
+      us-west-2 = "ami-091124c3965bce679"
       us-east-2 = "ami-04ea4e8270c27626c"
     }
 
@@ -47,11 +47,11 @@ workspaces = {
     load_balancer_type     = "application"
   }
 
-  dev-us-east-2 = {
+  dev-us-west-2 = {
     allowed_accounts = ["150100906110"]
     environment      = "dev"
-    aws_region       = "us-east-2"
-    central_region   = "us-east-1"
+    aws_region       = "us-west-2"
+    central_region   = "us-east-2"
     is_central       = false
     enable_gax       = false
 
@@ -64,8 +64,8 @@ workspaces = {
     ecs_volume_type   = "gp3"
 
     ecs_ami = {
-      us-east-1 = "ami-01edba92f9036f76e"
-      us-east-2 = "ami-04ea4e8270c27626c"
+      us-west-2 = "ami-091124c3965bce679"
+      us-east-2 = "ami-048f644e868baa0e8"
     }
 
     ecs_autoscaling = {
@@ -94,4 +94,5 @@ workspaces = {
     load_balancer_internal = true
     load_balancer_type     = "application"
   }
+
 }
